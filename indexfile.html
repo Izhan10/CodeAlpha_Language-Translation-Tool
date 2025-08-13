@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Language Translation Tool</title>
+    <link rel="stylesheet" href="stylingfile.css">
+    <script src="javafile.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="header">
+                <div class="icon-container">
+                    <div class="icon-circle">
+                        <svg class="language-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m5 8 6 6"/>
+                            <path d="m4 14 6-6 2-3"/>
+                            <path d="M2 5h12"/>
+                            <path d="M7 2h1"/>
+                            <path d="m22 22-5-10-5 10"/>
+                            <path d="M14 18h6"/>
+                        </svg>
+                    </div>
+                </div>
+                <h1 class="main-title">Multi-Language Translation Tool</h1>
+                <p class="subtitle">Translate text between multiple languages instantly</p>
+            </div>
+
+            <div class="language-selection-card">
+                <div class="language-controls">
+                    <div class="language-group">
+                        <label class="language-label">From</label>
+                        <div class="select-wrapper">
+                <select class="language-select">
+    <option value="ar">🇸🇦 Arabic</option>
+    <option value="zh">🇨🇳 Chinese</option>
+    <option value="da">🇩🇰 Danish</option>
+    <option value="nl">🇳🇱 Dutch</option>
+    <option value="en">🇺🇸 English</option>
+    <option value="fi">🇫🇮 Finnish</option>
+    <option value="fr">🇫🇷 French</option>
+    <option value="de">🇩🇪 German</option>
+    <option value="hi">🇮🇳 Hindi</option>
+    <option value="it">🇮🇹 Italian</option>
+    <option value="ja">🇯🇵 Japanese</option>
+    <option value="ko">🇰🇷 Korean</option>
+    <option value="no">🇳🇴 Norwegian</option>
+    <option value="pl">🇵🇱 Polish</option>
+    <option value="pt">🇵🇹 Portuguese</option>
+    <option value="ru">🇷🇺 Russian</option>
+    <option value="es">🇪🇸 Spanish</option>
+    <option value="sv">🇸🇪 Swedish</option>
+    <option value="th">🇹🇭 Thai</option>
+    <option value="tr">🇹🇷 Turkish</option>
+    <option value="ur">🇵🇰 Urdu</option>
+</select>
+
+                        </div>
+                    </div>
+                    <button class="swap-button">
+                        <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14"/>
+                            <path d="m12 5 7 7-7 7"/>
+                        </svg>
+                    </button>
+                    
+                    <div class="language-group">
+                        <label class="language-label">To</label>
+                        <div class="select-wrapper">
+                            <select class="language-select">
+    <option value="ar">🇸🇦 Arabic</option>
+    <option value="zh">🇨🇳 Chinese</option>
+    <option value="da">🇩🇰 Danish</option>
+    <option value="nl">🇳🇱 Dutch</option>
+    <option value="en">🇺🇸 English</option>
+    <option value="fi">🇫🇮 Finnish</option>
+    <option value="fr">🇫🇷 French</option>
+    <option value="de">🇩🇪 German</option>
+    <option value="hi">🇮🇳 Hindi</option>
+    <option value="it">🇮🇹 Italian</option>
+    <option value="ja">🇯🇵 Japanese</option>
+    <option value="ko">🇰🇷 Korean</option>
+    <option value="no">🇳🇴 Norwegian</option>
+    <option value="pl">🇵🇱 Polish</option>
+    <option value="pt">🇵🇹 Portuguese</option>
+    <option value="ru">🇷🇺 Russian</option>
+    <option value="es">🇪🇸 Spanish</option>
+    <option value="sv">🇸🇪 Swedish</option>
+    <option value="th">🇹🇭 Thai</option>
+    <option value="tr">🇹🇷 Turkish</option>
+    <option value="ur">🇵🇰 Urdu</option>
+</select>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="translation-grid">
+                <div class="translation-card">
+                    <div class="card-header">
+                        <h3 class="card-title">Enter Text to Translate</h3>
+                    </div>
+                    <div class="card-content">
+                        <textarea class="text-input" placeholder="Type your text here..."></textarea>
+                        <div class="card-footer">
+                            <span class="character-count">0 characters</span>
+                            <button class="translate-button">Translate</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="translation-card">
+                    <div class="card-header">
+                        <h3 class="card-title">Translation</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="text-output">
+                            <p class="placeholder-text">Translation will appear here...</p>
+                            <div id="output"></div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="character-count">0 characters</span>
+                            <button class="copy-button">Copy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
